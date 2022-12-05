@@ -15,7 +15,7 @@ public class RankedUpdateFunction implements RequestHandler<APIGatewayProxyReque
 
     @Override
     public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent event, Context context) {
-        //make work to update rank in user table in DynamoDB
+
         String userId;
         LambdaLogger logger = context.getLogger();
         APIGatewayProxyResponseEvent response = new APIGatewayProxyResponseEvent();

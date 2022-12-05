@@ -40,7 +40,7 @@ public class InviteFunction implements RequestHandler<APIGatewayV2WebSocketEvent
 
     @Override
     public APIGatewayV2WebSocketResponse handleRequest(APIGatewayV2WebSocketEvent apiGatewayV2WebSocketEvent, Context context) {
-        //Make invite logic client-server-client
+
         PostToConnectionRequest postToConnectionRequest;
         LambdaLogger logger = context.getLogger();
         Jedis jedis = cache.getClient();

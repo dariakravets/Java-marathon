@@ -18,7 +18,7 @@ public class GetAllConnectionFunction implements RequestHandler<APIGatewayProxyR
 
     @Override
     public APIGatewayProxyResponseEvent handleRequest(APIGatewayProxyRequestEvent apiGatewayProxyRequestEvent, Context context) {
-        //Return all connected username
+
         LambdaLogger logger = context.getLogger();
         APIGatewayProxyResponseEvent response = new APIGatewayProxyResponseEvent();
         try {

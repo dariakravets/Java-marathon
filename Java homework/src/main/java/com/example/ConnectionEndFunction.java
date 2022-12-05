@@ -17,7 +17,7 @@ public class ConnectionEndFunction implements RequestHandler<APIGatewayV2WebSock
 
     @Override
     public APIGatewayV2WebSocketResponse handleRequest(APIGatewayV2WebSocketEvent apiGatewayV2WebSocketEvent, Context context) {
-        //Make disconnect for webSocket function
+
         String id;
         String connectionId = apiGatewayV2WebSocketEvent.getRequestContext().getConnectionId();
         Jedis jedis = cache.getClient();

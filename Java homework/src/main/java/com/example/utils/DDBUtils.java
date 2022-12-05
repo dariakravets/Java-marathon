@@ -10,7 +10,6 @@ import software.amazon.awssdk.regions.Region;
 import software.amazon.awssdk.services.dynamodb.DynamoDbClient;
 
 public class DDBUtils {
-    //Make wort with DynamoDB
     private final DynamoDbEnhancedClient enhancedClient;
     private final String tableName;
 
